@@ -147,7 +147,6 @@ static kern_return_t rocketbootstrap_look_up_with_timeout(mach_port_t bp, const 
 	}
 	// Cleanup
 	mach_port_deallocate(selfTask, servicesPort);
-	mach_port_deallocate(selfTask, replyPort);
 	return err;
 }
 
